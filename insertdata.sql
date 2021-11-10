@@ -1,0 +1,80 @@
+insert into room values ('pre-school','Children who can feed themselves',24,66,6);
+insert into room values ('Schlchild','Children who attend school years 1 to 3',36,102,12);
+insert into room values ('infant1','Early months',2,6,3);
+insert into room values ('toddler','Toddlers who can walk and be fed with a spoon',12,24,6);
+
+insert into child values (4,'Nadia Kowalski','Nadia','13-JAN-2018','pre-school');
+insert into child values (5,'Emma O''Brien','Emma','11-OCT-2014','Schlchild');
+insert into child values (1,'Isabella O''Brien','Ella','31-JUL-2020','infant1');
+insert into child values (2,'Samuel O''Brien','Sam','01-AUG-2018','toddler');
+insert into child values (3,'Alexandru Kowalski','Alex','05-AUG-2020','infant1');
+insert into child values (6,'ABCDEFG','AA','05-AUG-2020','infant1');
+insert into child values (7,'HIJKLMN','HH','05-AUG-2020','Schlchild');
+
+insert into contact values (200,'Margaret O''Brien','40 Greyfriars Ave, D19',087456553);
+insert into contact values (202,'Terry O''Brien','40 Greyfriars Ave, D19',087456554);
+insert into contact values (204,'Pauline Lawson','34 Greyfriars Ave, D19',087456334);
+insert into contact values (210,'Zuzanna Kowalski','45 Mayfield Drive, D22',086456553);
+insert into contact values (212,'Antoni Kowalski','45 Mayfield Drive, D22',086456553);
+
+insert into relationship values ('Parent','Mum','Y',200,1);
+insert into relationship values ('Parent','Dad','N',202,1);
+insert into relationship values ('Neighbour','Pauline','N',204,1);
+insert into relationship values ('Parent','Mum','Y',200,2);
+insert into relationship values ('Parent','Dad','N',202,2);
+insert into relationship values ('Neighbour','Pauline','N',204,2);
+insert into relationship values ('Parent','Mum','Y',210,3);
+insert into relationship values ('Parent','Dad','N',212,3);
+insert into relationship values ('Parent','Mum','Y',210,4);
+insert into relationship values ('Parent','Dad','N',212,4);
+insert into relationship values ('Parent','Mum','Y',200,5);
+insert into relationship values ('Parent','Dad','N',202,5);
+insert into relationship values ('Neighbour','Pauline','N',204,5);
+
+insert into goal values ('feed01','Takes food from a bottle',2,18);
+insert into goal values ('feed03','Can feed from a bowl with cutlery',6,36);
+insert into goal values ('sit01','Can sit with support',4,9);
+insert into goal values ('sit02','Can sit without support',7,12);
+insert into goal values ('sleep01','Sleep for an hour during nap time.',2,36);
+insert into goal values ('social01','Remains content in creche',2,36);
+insert into goal values ('social02','Enjoys playing with others',6,36);
+insert into goal values ('walk01','Can walk with support',10,18);
+insert into goal values ('walk02','Can walk holding onto furniture',10,18);
+insert into goal values ('walk03','Can walk unsupported',10,24);
+
+insert into room_goals values ('pre-school','feed01');
+insert into room_goals values ('pre-school','feed03');
+insert into room_goals values ('pre-school','sit01');
+insert into room_goals values ('pre-school','sit02');
+insert into room_goals values ('pre-school','sleep01');
+insert into room_goals values ('pre-school','social01');
+insert into room_goals values ('pre-school','social02');
+insert into room_goals values ('pre-school','walk01');
+insert into room_goals values ('pre-school','walk02');
+insert into room_goals values ('pre-school','walk03');
+insert into room_goals values ('Schlchild','feed01');
+insert into room_goals values ('Schlchild','feed03');
+insert into room_goals values ('Schlchild','sit01');
+insert into room_goals values ('Schlchild','sit02');
+insert into room_goals values ('Schlchild','sleep01');
+insert into room_goals values ('Schlchild','social01');
+insert into room_goals values ('Schlchild','social02');
+insert into room_goals values ('Schlchild','walk01');
+insert into room_goals values ('Schlchild','walk02');
+insert into room_goals values ('Schlchild','walk03');
+
+insert into staff values (101,'Donald Trump');
+insert into staff values (102,'Joe Biden');
+insert into staff values (103,'Barack Obama');
+insert into staff values (104,'George Bush');
+
+insert into log values (101,'9-Nov-2021','half hour','pizza','smart',101,5);
+insert into log values (102,'8-Nov-2021','one hour','burger','very smart',102,5);
+insert into log values (103,'9-Nov-2021','half hour','burger','very very smart',101,4);
+insert into log values (104,'9-Nov-2021','half hour','cream','super smart',101,3);
+insert into log values (105,'9-Nov-2021','all day','milk','super super smart',101,2);
+insert into log values (106,'8-Nov-2021','half hour','cream','super smart',103,1);
+insert into log values (107,'7-Nov-2021','all day','milk','super super smart',103,5);
+insert into log values (108,'7-Nov-2021','half hour','cream','super smart',102,1);
+insert into log values (109,'7-Nov-2021','half hour','cream','super smart',102,4);
+insert into log values (110,'7-Nov-2021','all day','milk','super super smart',104,5);
